@@ -27,6 +27,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.bgbg{
+  float: left;
+  margin: 0 -2px;
+  overflow: hidden;
+  width: 30%;
+}
+.bgbg .image{
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  height: 100%;
+}
+
+
+
 ::-moz-selection {
   color: #fff;
   background-color: #6b59d3;
@@ -722,7 +738,7 @@ select.form-control option[value=""][disabled] {
 .form-content h2 {
   font-size: 50px;
   font-weight: 700;
-  padding: 85px 0px 20px 0px;
+  padding: 35px 0px 20px 0px;
 }
 .form-content p {
   color: #5f5f63;
@@ -1232,6 +1248,9 @@ select.form-control option[value=""][disabled] {
   }
 }
 @media screen and (max-width: 1199px) {
+  .bgbg{
+    display: none;
+  }
   .steps-area-fixed {
     position: static;
     width: 100% !important;
